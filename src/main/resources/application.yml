@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: sa
+    password:
+    url: jdbc:h2:tcp://localhost:3000/./databases/batch
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      dialect : org.hibernate.dialect.H2Dialect
+      
+ftp-batch:
+  config:
+    data-load-query: Select * from WINDOWS_EVENT
+    ftp-url: 
+    file-out-put-directory: /out_put/
+    file-name: EVENT_LOG
