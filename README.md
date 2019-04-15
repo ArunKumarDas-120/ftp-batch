@@ -20,4 +20,4 @@ Warning: FTP over TLS is not enabled, users cannot securely log in.
 </pre>
 
 3. Edit->User  Click on add enter user name <spring>. Check Enable Account and Password to set password
-4. Add Shared Folder  Physical path where we want to keep tranfered file.
+4. Add Shared Folder  Physical path where we want to keep transfered file.

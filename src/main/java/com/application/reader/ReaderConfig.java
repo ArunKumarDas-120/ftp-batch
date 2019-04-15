@@ -12,17 +12,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.application.config.property.FtpBatchConfig;
+import com.application.config.property.BatchConfig;
 import com.application.model.EventModel;
 
 @Configuration
-public class JdbcReader {
+public class ReaderConfig {
 
 	@Autowired
 	private DataSource datsource;
 	
 	@Autowired
-	private FtpBatchConfig ftpBatchConfig;
+	private BatchConfig ftpBatchConfig;
 	
 	
 	

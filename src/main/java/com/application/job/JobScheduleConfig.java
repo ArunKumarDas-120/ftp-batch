@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JobScheduleConfig {
+	
 	@Autowired
 	private JobLauncher lancher;
 	

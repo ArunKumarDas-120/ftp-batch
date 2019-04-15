@@ -6,10 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import com.application.config.property.FtpBatchConfig;
+import com.application.config.property.BatchConfig;
+import com.application.config.property.FtpConfigProperty;
 
 @SpringBootApplication
-@EnableConfigurationProperties(FtpBatchConfig.class)
+@EnableConfigurationProperties({ BatchConfig.class, FtpConfigProperty.class })
 @EnableBatchProcessing
 @EnableScheduling
 public class FtpBatchApplication {

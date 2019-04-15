@@ -3,10 +3,9 @@ package com.application.config.property;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "ftp-batch.config")
-public class FtpBatchConfig {
+public class BatchConfig {
 
 	private String dataLoadQuery;
-	private String ftpUrl;
 	private String fileOutPutDirectory;
 	private String fileName;
 
@@ -25,15 +24,6 @@ public class FtpBatchConfig {
 	public void setDataLoadQuery(String dataLoadQuery) {
 		this.dataLoadQuery = dataLoadQuery;
 	}
-
-	public String getFtpUrl() {
-		return ftpUrl;
-	}
-
-	public void setFtpUrl(String ftpUrl) {
-		this.ftpUrl = ftpUrl;
-	}
-
 	public String getFileOutPutDirectory() {
 		return fileOutPutDirectory;
 	}
