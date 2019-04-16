@@ -68,7 +68,7 @@ public class FileWriter implements ItemWriter<EventModel> {
 				writer.write("Completed  " + LocalDateTime.now().format(format));
 			}
 		});
-		stepExecution.getExecutionContext().putString("generatedFileName", generatedFile);
+		stepExecution.getJobExecution().getExecutionContext().putString("generatedFileName", generatedFile);
 		flatFileWriter.close();
 		return ExitStatus.COMPLETED;
 	}
