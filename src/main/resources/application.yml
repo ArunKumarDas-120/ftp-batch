@@ -15,7 +15,9 @@ ftp-batch:
     data-load-query: Select * from WINDOWS_EVENT
     file-out-put-directory: out_put/
     file-name: EVENT_LOG
-ftp:  config:    host: localhost
+ftp:
+  config:
+    host: localhost
     port: 21
     user-name: spring
     password: 123
